@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FLOREA – moderní sladké dárky, dorty a sladké kytice.">
+  <title>FLOREA | Sladké dárky</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <a href="#home" class="brand">
+    <img src="images/logo.jfif" alt="FLOREA logo">
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Domů</a>
+    <a href="#products">Produkty</a>
+    <a href="#about">O nás</a>
+    <a href="#order">Jak objednat</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Vyhledávání">⌕</button>
+    <button class="icon-btn cart-btn" id="cartBtn" aria-label="Košík">
+      ♡<span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <div class="mini-label"><span></span> SLADKÉ DÁRKY S PŘÍBĚHEM</div>
+      <h1>Malý dárek.<br><em>Velká radost.</em></h1>
+      <p>Elegantní sladké dárky, které jsou vytvořené tak, aby udělaly radost na první pohled i po prvním soustu.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">Prohlédnout nabídku</a>
+        <a href="#contact" class="btn btn-light">Vytvořit dárek</a>
+      </div>
+      <div class="hero-note">
+        <span>✦</span> ceny od <strong>350 Kč</strong>
+      </div>
+    </div>
+
+    <div class="hero-product">
+      <div class="hero-photo-frame">
+        <img src="images/produkt-4.jpeg" alt="FLOREA sladký Raffaello a Kinder dort">
+      </div>
+      <div class="floating-card">
+        <span>FLOREA</span>
+        <strong>sweet moments</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div>FLOREA <i>✦</i> SLADKÉ DÁRKY <i>✦</i> PRO RADOST <i>✦</i> VYTVOŘENO S DETAILem <i>✦</i> FLOREA</div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="section-top">
+      <div>
+        <div class="section-label">NAŠE NABÍDKA</div>
+        <h2>Vyberte si svůj<br><em>sladký moment.</em></h2>
+      </div>
+      <p>Od menších sladkých překvapení až po výrazné dárkové aranžmá. Každý produkt můžete dále přizpůsobit.</p>
+    </div>
+
+    <div class="product-tools">
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="all">Vše</button>
+        <button class="filter" data-category="cake">Sladké dorty</button>
+        <button class="filter" data-category="bouquet">Kytice</button>
+        <button class="filter" data-category="gift">Dárky</button>
+      </div>
+      <input class="search-input" id="productSearch" type="search" placeholder="Hledat produkt...">
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <section class="story section" id="about">
+    <div class="story-image">
+      <img src="images/produkt-1.png" alt="Sladký Kinder dort FLOREA">
+      <div class="image-tag">HANDMADE<br>WITH LOVE</div>
+    </div>
+
+    <div class="story-copy">
+      <div class="section-label">PROČ FLOREA?</div>
+      <h2>Sladkost,<br><em>která má styl.</em></h2>
+      <p>FLOREA spojuje sladké dobroty s elegantním vzhledem. Naším cílem je vytvořit dárek, který nebude jen chutný, ale bude také krásně vypadat.</p>
+      <p>Každý produkt připravujeme s důrazem na kombinaci barev, detailů a celkový dojem.</p>
+
+      <div class="story-points">
+        <div><span>01</span><strong>Originální design</strong><small>Každý dárek má svůj vlastní charakter.</small></div>
+        <div><span>02</span><strong>Sladké produkty</strong><small>Oblíbené sladkosti v kreativním provedení.</small></div>
+        <div><span>03</span><strong>Osobní přístup</strong><small>Možnost upravit dárek podle příležitosti.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="occasion">
+    <div class="section-label">PRO KAŽDOU PŘÍLEŽITOST</div>
+    <h2>Darujte <em>sladkou radost.</em></h2>
+    <div class="occasion-grid">
+      <div><span>♡</span><strong>Narozeniny</strong><small>Sladké překvapení pro oslavence.</small></div>
+      <div><span>✦</span><strong>Výročí</strong><small>Elegantní dárek pro výjimečný den.</small></div>
+      <div><span>♡</span><strong>Vánoce</strong><small>Sladká vánoční atmosféra v jednom dárku.</small></div>
+      <div><span>✧</span><strong>Jen tak</strong><small>Protože radost nemusí mít důvod.</small></div>
+    </div>
+  </section>
+
+  <section class="order section" id="order">
+    <div class="section-top centered">
+      <div>
+        <div class="section-label">JEDNODUŠE</div>
+        <h2>Jak objednat?</h2>
+      </div>
+      <p>Vyberte si produkt, napište nám své přání a společně doladíme váš dárek.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step"><span>01</span><h3>Vyberte produkt</h3><p>Prohlédněte si naši nabídku a vyberte si sladký dárek.</p></div>
+      <div class="step"><span>02</span><h3>Napište nám</h3><p>Kontaktujte nás přes e-mail, Instagram nebo formulář.</p></div>
+      <div class="step"><span>03</span><h3>Doladíme detaily</h3><p>Domluvíme barvy, věnování, termín a další přání.</p></div>
+      <div class="step"><span>04</span><h3>Potěšte své blízké</h3><p>FLOREA připraví váš sladký dárek.</p></div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="contact-copy">
+      <div class="section-label">KONTAKT</div>
+      <h2>Máte vlastní<br><em>představu?</em></h2>
+      <p>Napište nám. Rádi společně vytvoříme sladký dárek podle vaší představy.</p>
+
+      <div class="contact-list">
+        <a href="mailto:myflorea.cz@gmail.com"><span>E-mail</span><strong>myflorea.cz@gmail.com</strong></a>
+        <a href="tel:+420728229436"><span>Telefon</span><strong>+420 728 229 436</strong></a>
+        <a href="https://www.instagram.com/sweet_florea" target="_blank" rel="noopener"><span>Instagram</span><strong>@sweet_florea</strong></a>
+        <a href="https://www.facebook.com/sweet_florea" target="_blank" rel="noopener"><span>Facebook</span><strong>sweet_florea</strong></a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <label>Jméno<input type="text" name="name" placeholder="Vaše jméno" required></label>
+      <label>E-mail<input type="email" name="email" placeholder="vas@email.cz" required></label>
+      <label>Vaše přání<textarea name="message" placeholder="Napište nám, jaký dárek si představujete..." required></textarea></label>
+      <button class="btn btn-primary" type="submit">Odeslat zprávu</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="images/logo.jfif" alt="FLOREA logo">
+    <p>Sladké dárky, které řeknou víc než slova.</p>
+  </div>
+  <div class="footer-links">
+    <strong>FLOREA</strong>
+    <a href="#products">Produkty</a>
+    <a href="#about">O nás</a>
+    <a href="#order">Jak objednat</a>
+    <a href="#contact">Kontakt</a>
+  </div>
+  <div class="footer-links">
+    <strong>Kontakt</strong>
+    <a href="mailto:myflorea.cz@gmail.com">myflorea.cz@gmail.com</a>
+    <a href="tel:+420728229436">+420 728 229 436</a>
+    <a href="https://www.instagram.com/sweet_florea" target="_blank" rel="noopener">@sweet_florea</a>
+    <a href="https://www.facebook.com/sweet_florea" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 FLOREA. Všechna práva vyhrazena.</span>
+    <span>Sladké dárky s láskou ♥</span>
+  </div>
+</footer>
+
+<div class="search-panel" id="searchPanel">
+  <button class="close-panel" id="closeSearch">×</button>
+  <div class="section-label">VYHLEDÁVÁNÍ</div>
+  <h2>Co hledáte?</h2>
+  <input type="search" id="globalSearch" placeholder="Název produktu...">
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+  <div class="panel-head">
+    <h2>Váš košík</h2>
+    <button class="close-panel" id="closeCart">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div><span>Celkem</span><strong id="cartTotal">0 Kč</strong></div>
+    <button class="btn btn-primary checkout-btn" id="checkoutBtn">Dokončit objednávku</button>
+  </div>
+</aside>
+
+<div class="chatbot">
+  <button class="chat-toggle" id="chatToggle">✦</button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-head">
+      <div><strong>FLOREA</strong><small>Sladký asistent</small></div>
+      <button id="chatClose">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot-message">Dobrý den! Pomohu vám vybrat sladký dárek.</div>
+    </div>
+    <div class="quick-replies">
+      <button data-message="Chci dárek k narozeninám">Narozeniny</button>
+      <button data-message="Chci sladkou kytici">Sladká kytice</button>
+      <button data-message="Chci dárek do 500 Kč">Do 500 Kč</button>
+      <button data-message="Jak objednat?">Jak objednat?</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="productModal">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
