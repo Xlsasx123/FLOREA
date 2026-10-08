@@ -44,7 +44,6 @@ const products = [
     badge: "",
     image: "images/produkt-6.webp"
   },
-  
   }
 ];
 
