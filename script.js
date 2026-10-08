@@ -44,14 +44,7 @@ const products = [
     badge: "",
     image: "images/produkt-6.webp"
   },
-  {
-    id: 6,
-    name: "Čokoládový dárkový dort",
-    category: "cake",
-    price: 800,
-    desc: "Elegantní čokoládově laděný dárek pro milovníky sladkostí.",
-    badge: "SLADKÉ",
-    image: "images/produkt-1.png"
+  
   }
 ];
 
