@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Kinder sladký dort",
     category: "cake",
-    price: 1000,
+    price: 600,
     desc: "Velký sladký dort z oblíbených Kinder dobrot s výraznou stuhou.",
     badge: "NEJOBLÍBENĚJŠÍ",
     image: "images/produkt-1.png"
@@ -37,12 +37,30 @@ const products = [
   },
   {
     id: 5,
+    name: "Sladké překvapení",
+    category: "gift",
+    price: 450,
+    desc: "Menší sladký dárek s Kinder dobrotami a romantickým motivem.",
+    badge: "NOVINKA",
+    image: "images/produkt-5.webp"
+  },
+  {
+    id: 6,
     name: "Kinder mini box",
     category: "gift",
-    price: 500,
+    price: 350,
     desc: "Roztomilý sladký dárek vhodný jako malé překvapení pro radost.",
     badge: "",
     image: "images/produkt-6.webp"
+  },
+  {
+    id: 7,
+    name: "Čokoládový dárkový dort",
+    category: "cake",
+    price: 490,
+    desc: "Elegantní čokoládově laděný dárek pro milovníky sladkostí.",
+    badge: "SLADKÉ",
+    image: "images/produkt-1.png"
   }
 ];
 
