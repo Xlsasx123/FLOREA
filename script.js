@@ -43,7 +43,6 @@ const products = [
     desc: "Roztomilý sladký dárek vhodný jako malé překvapení pro radost.",
     badge: "",
     image: "images/produkt-6.webp"
-  },
   }
 ];
 
